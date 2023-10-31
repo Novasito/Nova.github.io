@@ -1,0 +1,102 @@
+body {
+    background: url('fondocredits.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'https://fonts.googleapis.com/css?family=Open+Sans';
+    color: white;
+}
+
+header, footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+main {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.background-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#credits-info {
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.credit-person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.credit-person img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.credit-person h3 {
+    margin-top: 10px;
+}
+
+.credit-person p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+}
+
+discord-btn {
+    background-color: white;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+discord-btn:hover {
+    background-color: #5A68A5;
+    transform: scale(1.05);
+}
+
+/* Estilo adicional para pantallas más grandes, como PC */
+@media (min-width: 768px) {
+    main {
+        padding: 40px;
+    }
+
+    .credit-person img {
+        max-width: 150px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    discord-btn {
+        font-size: 20px;
+    }
+}
